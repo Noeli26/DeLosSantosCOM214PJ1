@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Kings - Order Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/150x50?text=Smoothie+Kings+Logo" alt="Smoothie Kings Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="locations.html">Our Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Create Your Smoothie</h2>
+        <div id="fruitButtons">
+            <button onclick="addFruit('Banana')">Banana</button>
+            <button onclick="addFruit('Apples')">Apples</button>
+            <button onclick="addFruit('Mango')">Mango</button>
+            <button onclick="addFruit('Strawberry')">Strawberry</button>
+            <button onclick="addFruit('Kiwi')">Kiwi</button>
+            <button onclick="addFruit('Lime')">Lime</button>
+            <button onclick="addFruit('Blueberry')">Blueberry</button>
+            <button onclick="addFruit('Dragon Fruit')">Dragon Fruit</button>
+            <button onclick="addFruit('Grapes')">Grapes</button>
+        </div>
+        <div id="selectedFruits"></div>
+        <button id="checkoutButton" onclick="checkout()">Checkout</button>
+        <div id="smoothieAnimation" style="display:none;">
+            <img src="https://via.placeholder.com/150x150?text=Blending..." alt="Blending Animation">
+        </div>
+        <div id="finalOrder"></div>
+    </main>
+    <footer>
+        <p>© 2024 Smoothie Kings. All rights reserved.</p>
+    </footer>
+</body>
+</html>
